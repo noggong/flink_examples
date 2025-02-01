@@ -1,4 +1,4 @@
-package com.musinsa;
+package com.noggong.class1;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.java.ExecutionEnvironment;

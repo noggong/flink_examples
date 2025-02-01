@@ -1,4 +1,4 @@
-package com.musinsa;
+package com.noggong.class1;
 
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
