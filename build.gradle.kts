@@ -3,6 +3,7 @@ plugins {
     id("application")
     id("com.github.johnrengelman.shadow") version "8.1.1"  // uber-jar 생성을 위한 플러그인
     //
+    kotlin("jvm")
 }
 
 group = "com.musinsa"
@@ -33,6 +34,7 @@ dependencies {
 
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks.test {
@@ -62,4 +64,7 @@ tasks.jar {
 }
 tasks.build {
     dependsOn(tasks.shadowJar)
+}
+kotlin {
+    jvmToolchain(11)
 }
