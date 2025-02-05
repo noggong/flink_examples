@@ -46,7 +46,7 @@ public class SpeedingViolation {
                 new SpeedEvent("A1", 1675000000000L, 80.0), // 차량 A1의 이벤트 (80km/h)
                 new SpeedEvent("B2", 1675000005000L, 120.0), // 차량 B2의 이벤트 (120km/h)
                 new SpeedEvent("A1", 1675000010000L, 95.0),  // 차량 A1의 이벤트 (95km/h)
-                new SpeedEvent("B2", 1675000020000L, 135.0)  // 차량 B2의 이벤트 (135km/h)
+                new SpeedEvent("B2", 1975000020000L, 135.0)  // 차량 B2의 이벤트 (135km/h)
         ).assignTimestampsAndWatermarks(
                 // 워터마크를 생성하고 이벤트 시간 설정 (지연 허용 2초)
                 WatermarkStrategy.<SpeedEvent>forBoundedOutOfOrderness(Duration.ofSeconds(2))
